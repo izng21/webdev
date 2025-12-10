@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  background: #f0f8ff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.back-button {
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.game-container {
+  max-width: 420px;
+  margin: auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+canvas {
+  background: #eee;
+  display: block;
+  margin: auto;
+  border: 2px solid #ccc;
+}
+
+#score {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+#restart {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}

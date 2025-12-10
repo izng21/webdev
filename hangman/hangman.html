@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="hangman.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>🪓 Hangman</h1>
+  <p id="hint">Hint: ______</p>
+
+  <div class="hangman">
+    <div class="pole"></div>
+    <div class="stand"></div>
+    <div class="rope"></div>
+    <div class="head body-part"></div>
+    <div class="body body-part"></div>
+    <div class="left-arm body-part"></div>
+    <div class="right-arm body-part"></div>
+    <div class="left-leg body-part"></div>
+    <div class="right-leg body-part"></div>
+  </div>
+
+  <div id="word" class="word"></div>
+  <div id="letters" class="letters"></div>
+  <button onclick="startGame()">🔁 New Word</button>
+  <button onclick="window.location.href='../index.html'">⬅ Back to Homepage</button>
+  <script src="hangman.js"></script>
+</body>
+</html>

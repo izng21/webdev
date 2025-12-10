@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background:#f0f8ff;
+}
+
+.back-button {
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+#game {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 20px auto;
+  background: #fff3c7;
+  border: 2px solid #333;
+  overflow: hidden;
+}
+
+#basket {
+  position: absolute;
+  bottom: 10px;
+  width: 80px;
+  height: 30px;
+  background: #8d5524;
+  left: 160px;
+  border-radius: 10px;
+}
+
+.falling {
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+}

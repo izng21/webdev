@@ -1,0 +1,61 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: #1e90ff;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.card.flipped {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+#moves, #timer {
+  font-size: 1.2rem;
+  margin: 5px;
+  color: #333;
+}
+
+.back-button {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.back-button:hover {
+  background-color: #005fbf;
+}

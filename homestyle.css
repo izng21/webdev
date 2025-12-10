@@ -1,0 +1,119 @@
+/* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+}
+
+body {
+  background: url('images/homebg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(to right, #1e90ff, #00bfff);
+  color: white;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.title-tagline h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.title-tagline .tagline {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Game grid layout */
+main.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Game card base */
+.game-card {
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay for contrast */
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.game-card div {
+  position: relative;
+  z-index: 1;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+/* Unique background per game */
+.memory  { background-image: url('images/memory.jpg'); }
+.math    { background-image: url('images/math.png'); }
+.rock    { background-image: url('images/rock.png'); }
+.tictac  { background-image: url('images/tictactoe.jpg'); }
+.type    { background-image: url('images/typing.png'); }
+.guess   { background-image: url('images/guess.png'); }
+.quiz    { background-image: url('images/quiz.png'); }
+.mole    { background-image: url('images/mole.jpg'); }
+.hangman { background-image: url('images/hangman.jpg'); }
+.catch   { background-image: url('images/catch.jpg'); }
+.mine    { background-image: url('images/minesweeper.jpg'); }
+.snake   { background-image: url('images/snake.png'); }
+
+/* Footer always at the bottom */
+footer {
+  background: #ddd;
+  padding: 1rem;
+}
