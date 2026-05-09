@@ -105,8 +105,6 @@ Each game folder contains its own `HTML`, `CSS`, and `JS` files — fully self-c
 
 ## 📸 Screenshots
 
-> _Add screenshots of the home screen and a few games here._
-
 | Home / Launcher | In-Game |
 |:---:|:---:|
 | *(screenshot)* | *(screenshot)* |
